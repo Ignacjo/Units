@@ -1,13 +1,8 @@
+---
+import { Icon } from 'astro-icon/components'
+---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Units</title>
-	</head>
 	<body>
 		<header>
 			<a href="/">UNITS</a>
@@ -17,7 +12,7 @@
 				<a href="/shopall">SHOP ALL</a>
 			</div>
 			<div>
-				<a href="/cart">Shopping cart</a>
+				<Icon name="tabler--shopping-bag" size={40} />
 			</div>
 		</header>
 		<slot />
