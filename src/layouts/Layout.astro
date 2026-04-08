@@ -1,30 +1,37 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="en">
-	<body>
-		<header>
-			<a href="/">UNITS</a>
-			<div>
-				<a href="/pants">PANTS</a>
-				<a href="/Tops">TOPS</a>
-				<a href="/shopall">SHOP ALL</a>
-			</div>
-			<div>
-				<Icon name="tabler--shopping-bag" size={40} />
-			</div>
-		</header>
-		<slot />
-	</body>
+  <body>
+    <header class="flex gap-8 justify-between px-12 py-4">
+
+      <div class="flex justify-start">
+        <a href="/" class="font-serif font-bold text-2xl">UNITS</a>
+      </div>
+
+      <div class="flex gap-8 justify-center">
+        <a href="/pants" class="font-serif font-bold text-lg">Pants</a>
+        <a href="/Tops" class="font-serif font-bold text-lg">Tops</a>
+        <a href="/shopall" class="font-serif font-bold text-lg">Shop all</a>
+      </div>
+
+      <div class="flex justify-end">
+        <Icon name="cart" size={30} />
+      </div>
+
+    </header>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>

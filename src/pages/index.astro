@@ -8,20 +8,20 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
     <section>
-        <img src="D60286.jpg" alt="background" width="200" height="auto" />
-        <div>
-            <p>UNITS / CORE COLLECTION</p>
+        <img src="/D60286.jpg" alt="background" width="200" height="auto" />
+        <div class="flex justify-center">
+            <p class="font-serif text-7xl" >UNITS / CORE COLLECTION</p>
         </div>
-        <div>
-            <button>EXPLORE COLLECTION</button>
-            <p>By artists, for artists.</p>
+        <div class="flex justify-center flex-col items-center">
+            <button class="font-light bg-black scale -50 text-white px-10 py-3">EXPLORE COLLECTION</button>
+            <p class="font-serif">By artists, for artists.</p>
         </div>
     </section>
 
-    <section>
+    <section class="flex items-center">
         <div>
             <img
-                src="shirt1.jpg"
+                src="/shirt1.jpg"
                 alt="oversized shirt"
                 width="200"
                 height="auto"
@@ -29,35 +29,35 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div>
-            <p>ARCHIVE 01</p>
-            <p>EVERYDAY URBAN AESTHETICS</p>
-            <p>Not just top quality, we make what you wear feel special.</p>
+            <p class="font-sans">ARCHIVE 01</p>
+            <p class="font-serif text-5xl">Every day urban aesthetics</p>
+            <p class="font-serif text-sm">Not just top quality, we make what you wear feel special.</p>
         </div>
     </section>
 
     <section>
-        <div>
-            <p>
+        <div class="flex justify-center">
+            <p class="font-serif text-2xl">
                 "A wardrobe should be intentional, made of pieces that endure,
                 not trends that fade."
             </p>
         </div>
     </section>
 
-    <section>
+    <section class="flex justify-center gap-50">
         <div>
-            <p>ORIGIN</p>
-            <p>Kyoto, JP</p>
+            <p class="font-light">ORIGIN</p>
+            <p class="font-sans">Kyoto, JP</p>
         </div>
 
         <div>
-            <p>MATERIAL</p>
-            <p>Refined Wool</p>
+            <p class="font-light">MATERIAL</p>
+            <p class="font-sans">Refined Wool</p>
         </div>
 
         <div>
-            <p>STANDARD</p>
-            <p>Crafted to Last</p>
+            <p class="font-light">STANDARD</p>
+            <p class="font-sans">Crafted to Last</p>
         </div>
     </section>
 </Layout>
