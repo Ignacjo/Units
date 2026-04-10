@@ -7,57 +7,72 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <section>
-        <img src="/D60286.jpg" alt="background" width="200" height="auto" />
-        <div class="flex justify-center">
-            <p class="font-serif text-7xl" >UNITS / CORE COLLECTION</p>
-        </div>
-        <div class="flex justify-center flex-col items-center">
-            <button class="font-light bg-black scale -50 text-white px-10 py-3">EXPLORE COLLECTION</button>
-            <p class="font-serif">By artists, for artists.</p>
+    <section class="relative overflow-hidden py-64">
+        <img src="/D60286.jpg" alt="background" class="absolute w-full -z-10 -top-4/3 left-0" width="200" height="auto" />
+        <div class="flex flex-col gap-8">
+            <div class="flex justify-center">
+                <p class="font-serif text-7xl text-white">UNITS / CORE COLLECTION</p>
+            </div>
+            <div class="flex justify-center flex-col items-center gap-6">
+                <button
+                    class="font-light bg-black scale -50 text-white px-10 py-3"
+                    >EXPLORE COLLECTION</button
+                >
+                <p class="font-serif text-white">By artists, for artists.</p>
+            </div>
         </div>
     </section>
 
-    <section class="flex items-center">
-        <div>
+    <section class="flex items-center px-20 py-40">
+        <div class="flex flex-1">
             <img
-                src="/shirt1.jpg"
+                src="/shirt2.png"
                 alt="oversized shirt"
-                width="200"
+                width="900"
                 height="auto"
+            
             />
         </div>
 
-        <div>
-            <p class="font-sans">ARCHIVE 01</p>
+        <div class="flex flex-col gap-6 flex-2 justify-center pl-10">
+            <p class="font-sans text-[#7C8082]">ARCHIVE 01</p>
             <p class="font-serif text-5xl">Every day urban aesthetics</p>
-            <p class="font-serif text-sm">Not just top quality, we make what you wear feel special.</p>
+            <div>
+                <p class="font-serif text-[16px] flex px-6 max-w-xl text-[#7C8082]">
+                    Not just top quality, we make what you wear feel special,
+                    wear something so unique,that every purchase 
+                    feels like an investment.
+                </p>
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="flex justify-center">
-            <p class="font-serif text-2xl">
+        <div class="flex justify-center py-25">
+            <p class="font-serif font-bold text-2xl">
                 "A wardrobe should be intentional, made of pieces that endure,
                 not trends that fade."
             </p>
+            <div>
+                
+            </div>
         </div>
     </section>
 
-    <section class="flex justify-center gap-50">
-        <div>
-            <p class="font-light">ORIGIN</p>
-            <p class="font-sans">Kyoto, JP</p>
+    <section class="flex items-center justify-center gap-50 py-10 text-center">
+        <div class="flex flex-col gap-0.5">
+            <p class="font-light text-[14px] text-[#7C8082]">ORIGIN</p>
+            <p class="font-serif font-bold text-[18px]">Kyoto, JP</p>
         </div>
 
-        <div>
-            <p class="font-light">MATERIAL</p>
-            <p class="font-sans">Refined Wool</p>
+        <div class="flex flex-col gap-0.5">
+            <p class="font-light text-[14px] text-[#7C8082]">MATERIAL</p>
+            <p class="font-serif font-bold text-[18px]">Refined Wool</p>
         </div>
 
-        <div>
-            <p class="font-light">STANDARD</p>
-            <p class="font-sans">Crafted to Last</p>
+        <div class="flex flex-col gap-0.5">
+            <p class="font-light text-[14px] text-[#7C8082]">STANDARD</p>
+            <p class="font-serif font-bold text-[18px]">Crafted to Last</p>
         </div>
     </section>
 </Layout>
