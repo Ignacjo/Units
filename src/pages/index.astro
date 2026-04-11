@@ -8,72 +8,85 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
     <section class="relative overflow-hidden py-64">
-        <img src="/D60286.jpg" alt="background" class="absolute w-full -z-10 -top-4/3 left-0" width="200" height="auto" />
+        <img
+            src="/tyler2.jpg"
+            alt="background"
+            class="absolute w-full -z-10 -top-15 left-0"
+            width="200"
+            height="auto"
+        />
         <div class="flex flex-col gap-8">
             <div class="flex justify-center">
-                <p class="font-serif text-7xl text-white">UNITS / CORE COLLECTION</p>
+                <p class="font-serif text-7xl text-[#362C24]">
+                    CORE COLLECTION
+                </p>
             </div>
-            <div class="flex justify-center flex-col items-center gap-6">
-                <a href="/shopall"><button
-                    class="font-sans bg-black scale -50 text-white px-10 py-3 cursor-pointer"
-                    >EXPLORE COLLECTION</button
-                ></a>
-                
-                <p class="font-serif text-white">By artists, for artists.</p>
+            <div class="flex justify-center flex-col items-center gap-4">
+                <a href="/shopall"
+                    ><button
+                        class="font-sans bg-[#362C24] scale -50 text-[#BAD8E0] px-10 py-3 cursor-pointer transition-transform duration-300 hover:scale-120"
+                        >EXPLORE COLLECTION</button
+                    ></a
+                >
+
+                <p class="font-serif font-bold text-[#362C24]">
+                    By artists, for artists.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="flex items-center px-20 py-40">
+    <section class="flex items-center px-20 py-5">
         <div class="flex flex-1">
-            <img
-                src="/shirt2.png"
+            <a href=""><img
+                src="/jacket3.png"
                 alt="oversized shirt"
                 width="900"
                 height="auto"
-            
-            />
+                class="transition-transform duration-300 hover:scale-95 hover:opacity-80"
+            /></a>
         </div>
 
         <div class="flex flex-col gap-6 flex-2 justify-center pl-10">
             <p class="font-sans text-[#7C8082]">ARCHIVE 01</p>
-            <p class="font-serif text-5xl">Every day urban aesthetics</p>
+            <p class="font-serif text-5xl text-[#362C24]">Every day urban aesthetics</p>
             <div>
-                <p class="font-serif text-[16px] flex px-6 max-w-xl text-[#7C8082]">
+                
+                <p
+                    class="font-serif text-[16px] flex px-6 max-w-xl text-[#7C8082]"
+                >
                     Not just top quality, we make what you wear feel special,
-                    wear something so unique,that every purchase 
-                    feels like an investment.
+                    wear something so unique,that every purchase feels like an
+                    investment.
                 </p>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="flex justify-center py-25">
-            <p class="font-serif font-bold text-2xl">
+        <div class="flex flex-col items-center py-25">
+            <p class="font-serif font-bold text-2xl text-[#362C24]">
                 "A wardrobe should be intentional, made of pieces that endure,
                 not trends that fade."
             </p>
-            <div>
-                
-            </div>
+            <div class="w-25 h-[2px] bg-[#362C24] my-10"></div>
         </div>
     </section>
 
     <section class="flex items-center justify-center gap-50 py-10 text-center">
         <div class="flex flex-col gap-0.5">
             <p class="font-light text-[14px] text-[#7C8082]">ORIGIN</p>
-            <p class="font-serif font-bold text-[18px]">Kyoto, JP</p>
+            <p class="font-serif font-bold text-[18px] text-[#362C24]">Kyoto, JP</p>
         </div>
 
         <div class="flex flex-col gap-0.5">
             <p class="font-light text-[14px] text-[#7C8082]">MATERIAL</p>
-            <p class="font-serif font-bold text-[18px]">Refined Wool</p>
+            <p class="font-serif font-bold text-[18px] text-[#362C24]">Refined Wool</p>
         </div>
 
         <div class="flex flex-col gap-0.5">
             <p class="font-light text-[14px] text-[#7C8082]">STANDARD</p>
-            <p class="font-serif font-bold text-[18px]">Crafted to Last</p>
+            <p class="font-serif font-bold text-[18px] text-[#362C24]">Crafted to Last</p>
         </div>
     </section>
 </Layout>
