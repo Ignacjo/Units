@@ -13,21 +13,21 @@ import "../styles/global.css";
         >
       </div>
 
-      <div class="flex gap-8 justify-center">
-        <a href="/pants" class="font-serif font-bold text-lg text-[#362C24]"
+      <div class="flex gap-13 justify-center">
+        <a href="/pants" class="font-serif font-bold text-lg text-[#362C24] transition-transform duration-150 hover:scale-120"
           >Pants</a
         >
-        <a href="/Tops" class="font-serif font-bold text-lg text-[#362C24]"
+        <a href="/Tops" class="font-serif font-bold text-lg text-[#362C24] transition-transform duration-150 hover:scale-120"
           >Tops</a
         >
-        <a href="/shopall" class="font-serif font-bold text-lg text-[#362C24]"
+        <a href="/shopall" class="font-serif font-bold text-lg text-[#362C24] transition-transform duration-150 hover:scale-120"
           >Shop all</a
         >
       </div>
 
-      <div class="flex justify-end">
-        <a href="/cart"><Icon name="marron" size={30} /> </a>
-      </div>
+      <div class="flex justify-end transition-transform duration-300 hover:scale-120">
+        <a href="/cart"><Icon name="marron" size={30}/></a>
+      </div> 
     </header>
     <slot />
   </body>
