@@ -1,30 +1,17 @@
 ---
+import Products from "../components/Products.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
     <section class="flex flex-col gap-10">
         <div class="flex justify-center gap-10">
-            <div class="flex flex-col">
-                <img src="/vici.png" alt="" class="w-[400px] hover:opacity-80" />
-                <p class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium">YELLOW TINTED DENIM 110$</p>
-            </div>
-            <div class="flex flex-col">
-                <img src="/coffee.png" alt="" class="w-[400px] hover:opacity-80" />
-                <p class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium">BROWN DENIM 110$</p>
-            </div>
-            
+            <Products titulo="YELLOW TINTED DENIM 110$" imagen="/vici.png"> </Products>
+            <Products titulo="BROWN DENIM 110$" imagen="/coffee.png"> </Products>
         </div>
         <div class="flex justify-center gap-10">
-            <div class="flex flex-col">
-                <img src="/azul.png" alt="" class="w-[400px] hover:opacity-80" />
-                <p class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium">BLUE DENIM 110$</p>
-            </div>
-            <div class="flex flex-col">
-                <img src="/faded.png" alt="" class="w-[400px] hover:opacity-80" />
-                <p class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium">BLUE DENIM 110$</p>
-            </div>
-            
+            <Products titulo="BLUE DENIM 110$" imagen="/azul.png"> </Products>
+            <Products titulo="BLACK WASHED DENIM 110$" imagen="/faded.png"> </Products>
         </div>
     </section>
 </Layout>

@@ -1,0 +1,14 @@
+---
+const titulo = Astro.props.titulo
+const imagen = Astro.props.imagen
+---
+
+<div class="flex flex-col">
+    <img src={imagen} alt="" class="w-[400px] hover:opacity-80" />
+    <p
+        class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium"
+    >
+        {titulo}
+        
+    </p>
+</div>
