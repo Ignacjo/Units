@@ -1,17 +1,20 @@
 ---
 import Products from "../components/Products.astro";
 import Layout from "../layouts/Layout.astro";
+import pants from "../data/pants";
 ---
 
 <Layout>
     <section class="flex flex-col gap-10">
         <div class="flex justify-center gap-10">
-            <Products titulo="YELLOW TINTED DENIM 110$" imagen="/vici.png"> </Products>
-            <Products titulo="BROWN DENIM 110$" imagen="/coffee.png"> </Products>
-        </div>
-        <div class="flex justify-center gap-10">
-            <Products titulo="BLUE DENIM 110$" imagen="/azul.png"> </Products>
-            <Products titulo="BLACK WASHED DENIM 110$" imagen="/faded.png"> </Products>
+            {pants.map((producto) => (
+                <Products
+                    titulo={producto.titulo}
+                    imagen={producto.imagen}
+                    id={producto.id}
+                    category="pants"
+                />
+            ))}
         </div>
     </section>
 </Layout>

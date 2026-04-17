@@ -1,18 +1,21 @@
 ---
 import Products from "../components/Products.astro";
 import Layout from "../layouts/Layout.astro";
+import tops from "../data/tops";
 ---
 
 <Layout>
 
 <section class="flex flex-col gap-10">
-<div class="flex justify-center gap-10">
-            <Products titulo="BLACK QUARTER ZIP 150$" imagen="/black-hoodie.png"> </Products>
-            <Products titulo="SKY BLUE T-SHIRT 60$" imagen="/blue-shirt.png"> </Products>
-        </div>
         <div class="flex justify-center gap-10">
-            <Products titulo="BROWN JACKET 210$" imagen="/brown-jacket.png"> </Products>
-            <Products titulo="GREEN HOODIE 150$" imagen="/green-hoodie.png"> </Products>
+            {tops.map((producto) => (
+                <Products
+                    titulo={producto.titulo}
+                    imagen={producto.imagen}
+                    id={producto.id}
+                    category="tops"
+                />
+            ))}
         </div>
     </section>
     

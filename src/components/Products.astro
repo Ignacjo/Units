@@ -1,14 +1,16 @@
 ---
 const titulo = Astro.props.titulo
 const imagen = Astro.props.imagen
+const id = Astro.props.id
+const category = Astro.props.category || 'pants'
 ---
 
-<div class="flex flex-col">
-    <img src={imagen} alt="" class="w-[400px] hover:opacity-80" />
+<a href={`/${category}/${id}`} class="flex flex-col group">
+    <img src={imagen} alt="" class="w-[400px] hover:opacity-80 transition-opacity duration-200" />
     <p
-        class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium"
+        class="flex justify-center mt-4 text-[11px] tracking-[0.2em] uppercase font-medium group-hover:text-[#7C8082] transition-colors duration-200"
     >
         {titulo}
-        
+
     </p>
-</div>
+</a>
