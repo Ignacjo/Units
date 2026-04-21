@@ -3,7 +3,25 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-222
+  <section class="max-w-4xl mx-auto p-10 bg-white min-h-screen">
+    <h1 class="text-4xl font-bold mb-10">Shopping Cart</h1>
 
-    
+    <div class="border-b border-zinc-200 pb-8 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <img src="/vici.png" alt="Yellow Tinted Denim" class="w-24 h-auto rounded-md">
+        <div>
+          <h2 class="text-lg font-bold">YELLOW TINTED DENIM</h2>
+          <p class="text-sm text-zinc-500">Size: 30</p>
+        </div>
+      </div>
+      <p class="font-bold">$110</p>
+    </div>
+
+    <div class="mt-10 text-right">
+      <p class="text-2xl font-bold mb-4">Total: $110</p>
+      <button class="bg-black text-white px-8 py-4 uppercase tracking-widest hover:bg-zinc-800 transition-all">
+        Pay Now
+      </button>
+    </div>
+</section>
 </Layout>
